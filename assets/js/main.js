@@ -40,6 +40,7 @@ const showProduct = (data) =>{
         console.log(value);
         HTML += ` <div class="col-12 col-sm-6 col-md-3">
                         <div class="cart-wrap">
+                        <a href="./detail.html?id=${value.id}">
                             <div class="cart-wrap-content">
                                 <img src="${value.image}" alt="">
                                 <h4>${value.name} </h4>
@@ -49,9 +50,23 @@ const showProduct = (data) =>{
                                 </div>
                                 
                             </div>
+                            </a>
                         </div>
                     </div>`
     });
 
     rowJs.innerHTML = HTML;
-}
+};
+
+// tim kiem 
+
+const from = document.querySelector(".products-menu-seach")
+const inputSearch =document.querySelector(".input-seach")
+
+from.addEventListener("submit",(event) =>{
+    event.preventDefault();
+    const searchTerm = inputSearch.value;
+    if(searchTerm && searchTerm !== ''){
+        getApi()
+    }
+})
