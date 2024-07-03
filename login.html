@@ -50,7 +50,7 @@
                 </div>
                 <ul class="list-menu">
                     <li>
-                        <a href="">Trang chủ </a>
+                        <a href="index.html">Trang chủ </a>
                     </li>
 
                     <li>
@@ -84,16 +84,17 @@
                 <div class="cart-login">
                     <h1>Đăng nhập</h1>
                     <form>
+                         
                         <!-- Email input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                          <input type="email" id="form2Example1" class="form-control" />
-                          <label class="form-label" for="form2Example1">Email của bạn </label>
+                          <input id="email" type="email" placeholder="Email của bạn " class="form-control input-login-gmail-js" />
+                          
                         </div>
                       
                         <!-- Password input -->
                         <div data-mdb-input-init class="form-outline mb-4">
-                          <input type="password" id="form2Example2" class="form-control" />
-                          <label class="form-label" for="form2Example2">Mật khẩu </label>
+                          <input type="password" id="password" placeholder="Mật khẩu của bạn " class="form-control input-login-password-js" />
+                         
                         </div>
                       
                         <!-- 2 column grid layout for inline styling -->
@@ -113,7 +114,7 @@
                         </div>
                       
                         <!-- Submit button -->
-                        <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign in</button>
+                        <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4 btn-login-js">Sign in</button>
                       
                         <!-- Register buttons -->
                         <div class="text-center">
@@ -193,5 +194,8 @@
     </div>
      <!-- js-bootstrap -->
      <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="./assets/js/register.js"></script>
+     <script src="./assets/js/main.js"></script>
+     
 </body>
 </html>
