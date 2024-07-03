@@ -60,16 +60,10 @@ const showProduct = (data) =>{
 
 // tim kiem 
 
-const from = document.querySelector(".products-menu-seach")
-const inputSearch =document.querySelector(".input-seach")
 
-from.addEventListener("submit",(event) =>{
-    event.preventDefault();
-    const searchTerm = inputSearch.value;
-    if(searchTerm && searchTerm !== ''){
-        getApi()
-    }
-})
+
+//phân trang :
+
 
 
 
