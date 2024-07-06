@@ -81,7 +81,7 @@ const API_URL = "https://r3x9h4-3000.csb.app/products";
 
             if (thisPage !== 1) {
                 let prev = document.createElement('li');
-                prev.innerText = 'PREV';
+                prev.innerText = '<<';
                 prev.onclick = () => changePage(thisPage - 1);
                 listPage.appendChild(prev);
             }
@@ -98,7 +98,7 @@ const API_URL = "https://r3x9h4-3000.csb.app/products";
 
             if (thisPage !== count) {
                 let next = document.createElement('li');
-                next.innerText = 'NEXT';
+                next.innerText = '>>';
                 next.onclick = () => changePage(thisPage + 1);
                 listPage.appendChild(next);
             }
